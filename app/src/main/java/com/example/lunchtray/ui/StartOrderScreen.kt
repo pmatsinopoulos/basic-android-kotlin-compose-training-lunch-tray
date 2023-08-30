@@ -37,9 +37,9 @@ fun StartOrderScreen(
     modifier: Modifier = Modifier
 ) {
     Column(
-        modifier = modifier,
+        modifier = modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
+        verticalArrangement = Arrangement.Center,
     ) {
         Button(
             onClick = onStartOrderButtonClicked,
@@ -52,7 +52,7 @@ fun StartOrderScreen(
 
 @Preview
 @Composable
-fun StartOrderPreview(){
+fun StartOrderPreview() {
     StartOrderScreen(
         onStartOrderButtonClicked = {},
         modifier = Modifier
